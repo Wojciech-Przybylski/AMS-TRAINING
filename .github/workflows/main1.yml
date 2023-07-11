@@ -34,3 +34,6 @@ jobs:
           echo test, and deploy your project.
       - name: Lists current directory contents
         run: ls -la
+      - name: run a script.sh file
+        run: script.sh
+        
