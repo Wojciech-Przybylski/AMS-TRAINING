@@ -1,6 +1,8 @@
+**input:**
+
 `select Continent, sum(population) as population_per_continent from country Group BY Continent;`
 
-output:
+*output:*
 
     | Continent     | population_per_continent |
     |------------------------------------------|
@@ -12,9 +14,11 @@ output:
     | Oceania       |                 30401150 |
     | Antarctica    |                        0 |
 
+**input:**
+
 `select continent, max(Population) as max_population, min(Population) as min_population, avg(Population) as avg_population from country Group by continent;`
 
-output:
+*output:*
     
     | continent     | max_population | min_population | avg_population |
     --------------------------------------------------------------------
