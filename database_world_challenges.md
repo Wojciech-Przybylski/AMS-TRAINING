@@ -117,3 +117,10 @@
     | Japan          | Funabashi                 |
     | Japan          | Fukuyama                  |
     +----------------+---------------------------+
+
+`select count(city.name) as number_of_cities_in_China from city left join country on city.countrycode=country.code where country.name= 'China';`
+    
+    | number_of_cities_in_China |
+    +---------------------------+
+    |                       363 |
+    +---------------------------+
