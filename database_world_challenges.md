@@ -124,3 +124,14 @@
     +---------------------------+
     |                       363 |
     +---------------------------+
+
+`select name, population from country where IndepYear != 'NULL' and population !=0 order by Population asc limit 5;`
+
+    | name                          | population |
+    +-------------------------------+------------+
+    | Holy See (Vatican City State) |       1000 |
+    | Nauru                         |      12000 |
+    | Tuvalu                        |      12000 |
+    | Palau                         |      19000 |
+    | San Marino                    |      27000 |
+    +-------------------------------+------------+
