@@ -25,7 +25,7 @@ if input_stage == 1:
     fahrenheit_output = (int(celsius_conv)*9/5) + 32
     print(f"{fahrenheit_output} F")
 elif input_stage == 2:
-    fahrenheit_conv = input("Enter temperature in Celsius: ")
+    fahrenheit_conv = input("Enter temperature in Fahrenheit: ")
     celsius_output = (int(fahrenheit_conv) - 32)*5/9
     print(f"{celsius_output} C")
 
