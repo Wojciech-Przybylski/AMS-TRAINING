@@ -40,3 +40,16 @@ John was extremely happy with his achievement so much so he has written down a l
 John felt proud of his accomplishments, and he was thankful for the opportunity to learn and grow. He was confident in his skills, and he was looking forward to the future as a software engineer.
 
 ### Special thanks to - [toolbaz - ai story generator](https://toolbaz.com/writer/ai-story-generator)
+
+`select Continent, sum(population) as population_per_continent from country Group BY Continent;`
+
+    | Continent     | population_per_continent |
+    |------------------------------------------|
+    | North America |                482993000 |
+    | Asia          |               3705025700 |
+    | Africa        |                784475000 |
+    | Europe        |                730074600 |
+    | South America |                345780000 |
+    | Oceania       |                 30401150 |
+    | Antarctica    |                        0 |
+
