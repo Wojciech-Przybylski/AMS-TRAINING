@@ -23,10 +23,10 @@ input_stage = int(input(f"choose temperature conversion:"
 if input_stage == 1:
     celsius_conv = input("Enter temperature in Celsius: ")
     fahrenheit_output = (int(celsius_conv)*9/5) + 32
-    print(fahrenheit_output)
+    print(f"{fahrenheit_output} F")
 elif input_stage == 2:
     fahrenheit_conv = input("Enter temperature in Celsius: ")
     celsius_output = (int(fahrenheit_conv) - 32)*5/9
-    print(celsius_output)
+    print(f"{celsius_output} C")
 
 
