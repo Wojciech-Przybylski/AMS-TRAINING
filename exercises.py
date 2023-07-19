@@ -57,5 +57,5 @@ assessment_score = input("Enter your assessment score (/50): ")
 exam_score = input("Enter your exam score (/100): ")
 
 print(
-    f"Here is the percentage score for student: {student_name} Percentage: "
+    f"Here is the percentage score for : {student_name} Percentage: "
     f"{'%.0f' % grade_calc(homework_score, assessment_score, exam_score)}")
