@@ -118,7 +118,6 @@
 # Anagram Checker
 
 def AnagramChecker(x, y):
-
     word1_list = sorted([*x.lower().replace(' ', '')])
     word2_list = sorted([*y.lower().replace(' ', '')])
 
@@ -127,11 +126,9 @@ def AnagramChecker(x, y):
     else:
         return print("These two strings are not an anagram")
 
+
 if __name__ == '__main__':
+    word1 = input("Enter your first string: ")
+    word2 = input("Enter your second string: ")
 
-word1 = input("Enter your first string: ")
-word2 = input("Enter your second string: ")
-
-AnagramChecker(word1, word2)
-
-
+    AnagramChecker(word1, word2)
