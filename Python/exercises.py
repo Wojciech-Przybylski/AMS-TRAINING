@@ -92,25 +92,39 @@
 
 # 3
 
-def is_prime(x):
-    if x < 2:
-        return False
-    else:
-        for n in range(2, x - 1):
-            if x % n == 0:  # syntax fix - '=' to '=='
-                return False
-            else:
-                return True
+# def is_prime(x):
+#     if x < 2:
+#         return False
+#     else:
+#         for n in range(2, x - 1):
+#             if x % n == 0:  # syntax fix - '=' to '=='
+#                 return False
+#             else:
+#                 return True
+#
+#
+# print(is_prime(2))
+# print(is_prime(3))
+# print(is_prime(4))
+# print(is_prime(5))
+# print(is_prime(6))
+# print(is_prime(7))
+# print(is_prime(15))
+# print(is_prime(20))
+# print(is_prime(25))
+
+# academia.edu ex
+
+# Anagram Checker
 
 
-print(is_prime(2))
-print(is_prime(3))
-print(is_prime(4))
-print(is_prime(5))
-print(is_prime(6))
-print(is_prime(7))
-print(is_prime(15))
-print(is_prime(20))
-print(is_prime(25))
+word1 = input("Enter your first word: ")
+word2 = input("Enter your second word: ")
 
+word1_list = sorted([*word1.lower().replace(' ', '')])
+word2_list = sorted([*word2.lower().replace(' ', '')])
 
+if word1_list == word2_list:
+    print("These two strings are an anagram")
+else:
+    print("These two strings are not an anagram")
