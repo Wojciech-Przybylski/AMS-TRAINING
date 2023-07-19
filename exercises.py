@@ -60,4 +60,6 @@ print(
     f"Here is your percentage score "
     f"\nStudent: {student_name} "
     f"\nPercentage: "
-    f"{'%.0f' % grade_calc(homework_score, assessment_score, exam_score)}")
+    f"{'%.0f' % grade_calc(homework_score, assessment_score, exam_score)}%")
+
+
