@@ -39,9 +39,9 @@
 #
 # added_number = add_calc(5, 5)
 # print(added_number + 20)
-
-# 1
-
+#
+# # 1
+#
 # def grade_calc(hm, assessment, exam):
 #     total_score = int(hm) + int(assessment) + int(exam)
 #     grade_percentage = (total_score / 175) * 100
@@ -61,5 +61,56 @@
 #     f"\nStudent: {student_name} "
 #     f"\nPercentage: "
 #     f"{'%.0f' % grade_calc(homework_score, assessment_score, exam_score)}%")
+#
+#
+# DB exercises
+
+# 1
+
+# price = {"Burger": 4.50, "Hotdog": 3.50}  # created a dictionary so the item price variable can be established
+# user_funds = 10.31
+# item_price = price["Burger"]  # there is no definition for price - from the format of the variable it's visible that
+# # it's a dictionary type data
+#
+# if item_price < user_funds:
+#     print("You have enough money!")  # syntax error - fix - change Print - print
+# elif item_price == user_funds:  # syntax error - fix - change = to ==, changed if to elif
+#     print("You have the precise amount of money")
+# elif item_price < user_funds:  # changed if to elif
+#     print("Sorry you don't have enough money")  # fix - added speach marks at the start and end of the string
+
+# 2
+
+# def product(n):
+#     total = 1  # syntax error - fix - '==' to '='
+#     for i in n:  # name error - fix - change the first 'n' to 'i'
+#         total *= i
+#     return total  # corrected indentation
+#
+#
+# print(product([4, 4, 5]))
+
+# 3
+
+def is_prime(x):
+    if x < 2:
+        return False
+    else:
+        for n in range(2, x - 1):
+            if x % n == 0:  # syntax fix - '=' to '=='
+                return False
+            else:
+                return True
+
+
+print(is_prime(2))
+print(is_prime(3))
+print(is_prime(4))
+print(is_prime(5))
+print(is_prime(6))
+print(is_prime(7))
+print(is_prime(15))
+print(is_prime(20))
+print(is_prime(25))
 
 
