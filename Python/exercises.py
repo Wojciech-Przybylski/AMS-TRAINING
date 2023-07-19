@@ -118,8 +118,8 @@
 # Anagram Checker
 
 
-word1 = input("Enter your first word: ")
-word2 = input("Enter your second word: ")
+word1 = input("Enter your first string: ")
+word2 = input("Enter your second string: ")
 
 word1_list = sorted([*word1.lower().replace(' ', '')])
 word2_list = sorted([*word2.lower().replace(' ', '')])
