@@ -42,24 +42,24 @@
 
 # 1
 
-def grade_calc(hm, assessment, exam):
-    total_score = int(hm) + int(assessment) + int(exam)
-    grade_percentage = (total_score / 175) * 100
-    return grade_percentage
-
-
-student_name = input("Enter your name here: ")
-
-homework_score = input("Enter your homework score (/25): ")
-
-assessment_score = input("Enter your assessment score (/50): ")
-
-exam_score = input("Enter your exam score (/100): ")
-
-print(
-    f"Here is your percentage score "
-    f"\nStudent: {student_name} "
-    f"\nPercentage: "
-    f"{'%.0f' % grade_calc(homework_score, assessment_score, exam_score)}%")
+# def grade_calc(hm, assessment, exam):
+#     total_score = int(hm) + int(assessment) + int(exam)
+#     grade_percentage = (total_score / 175) * 100
+#     return grade_percentage
+#
+#
+# student_name = input("Enter your name here: ")
+#
+# homework_score = input("Enter your homework score (/25): ")
+#
+# assessment_score = input("Enter your assessment score (/50): ")
+#
+# exam_score = input("Enter your exam score (/100): ")
+#
+# print(
+#     f"Here is your percentage score "
+#     f"\nStudent: {student_name} "
+#     f"\nPercentage: "
+#     f"{'%.0f' % grade_calc(homework_score, assessment_score, exam_score)}%")
 
 
