@@ -1,3 +1,7 @@
+import random
+import string
+
+
 # Qa exercise
 # for i in range(5):
 #   name = input("What is your name?")
@@ -117,18 +121,34 @@
 
 # Anagram Checker
 
-def AnagramChecker(x, y):
-    word1_list = sorted([*x.lower().replace(' ', '')])
-    word2_list = sorted([*y.lower().replace(' ', '')])
+# def AnagramChecker(x, y):
+#     word1_list = sorted([*x.lower().replace(' ', '')])
+#     word2_list = sorted([*y.lower().replace(' ', '')])
+#
+#     if word1_list == word2_list:
+#         return print("These two strings are an anagram")
+#     else:
+#         return print("These two strings are not an anagram")
+#
+#
+# if __name__ == '__main__':
+#     word1 = input("Enter your first string: ")
+#     word2 = input("Enter your second string: ")
+#
+#     AnagramChecker(word1, word2)
+#
 
-    if word1_list == word2_list:
-        return print("These two strings are an anagram")
-    else:
-        return print("These two strings are not an anagram")
+# Pass Generator
+def PasswordGenerator():
+    pass_length = 30
+
+    password = ""
+
+    while pass_length > 0:
+        pass_gen = str(random.choice(string.ascii_letters + string.punctuation + string.digits))
+        password += pass_gen
+        pass_length -= 1
+    return password
 
 
-if __name__ == '__main__':
-    word1 = input("Enter your first string: ")
-    word2 = input("Enter your second string: ")
-
-    AnagramChecker(word1, word2)
+print(PasswordGenerator())
