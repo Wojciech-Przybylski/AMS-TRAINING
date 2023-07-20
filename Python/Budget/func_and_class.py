@@ -1,4 +1,10 @@
 def NavigationFunction():
+
+    entertainment = Budget("entertainment", 0)
+    groceries = Budget("groceries", 0)
+    housing = Budget("housing", 0)
+    travel = Budget("entertainment", 0)
+
     while True:
         navigation = int(input(f"What would you like to do?"
                                f"\n1. Show budgets"
