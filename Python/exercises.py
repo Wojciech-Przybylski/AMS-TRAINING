@@ -139,16 +139,16 @@ import string
 #
 
 # Pass Generator
-def PasswordGenerator():
-    pass_length = 30
-
-    password = ""
-
-    while pass_length > 0:
-        pass_gen = str(random.choice(string.ascii_letters + string.punctuation + string.digits))
-        password += pass_gen
-        pass_length -= 1
-    return password
-
-
-print(PasswordGenerator())
+# def PasswordGenerator():
+#     pass_length = 30
+#
+#     password = ""
+#
+#     while pass_length > 0:
+#         pass_gen = str(random.choice(string.ascii_letters + string.punctuation + string.digits))
+#         password += pass_gen
+#         pass_length -= 1
+#     return password
+#
+#
+# print(PasswordGenerator())
