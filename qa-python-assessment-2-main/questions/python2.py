@@ -31,7 +31,16 @@
 # How does a for loop iterate through a string?
 
 def one(string):
-    return ""
+    list_of_char = []
+    for char in string:
+        make_one_three = char*3
+        list_of_char.append(make_one_three)
+        new_string = "".join(list_of_char)
+    return new_string
+
+print(one("The"))
+print(one(("AAbb")))
+print(one(("Hi-There")))
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 
