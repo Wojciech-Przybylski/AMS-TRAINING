@@ -204,7 +204,17 @@ five()
 
 
 def six(string):
-    return False
+    if string[-2:] == "py":
+        return True
+    else:
+        return False
+
+
+print(six("ilovepy"))
+print(six("welovepy"))
+print(six("welovepyforreal"))
+print(six("pyiscool"))
+
 
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
