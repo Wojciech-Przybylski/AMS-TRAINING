@@ -77,7 +77,7 @@ def two(number):
         return False
 
 
-print(two(67))
+print(two(3))
 print(two(8))
 
 
@@ -99,7 +99,11 @@ print(two(8))
 
 
 def three(a):
-    return 1
+    integer_sum = int(str(a)) + int(str(a)*2) + int(str(a)*3) + int(str(a)*4)
+    return integer_sum
+
+
+print(three(5))
 
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
