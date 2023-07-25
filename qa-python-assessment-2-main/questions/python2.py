@@ -99,7 +99,7 @@ print(two(8))
 
 
 def three(a):
-    integer_sum = int(str(a)) + int(str(a)*2) + int(str(a)*3) + int(str(a)*4)
+    integer_sum = int(str(a)) + int(str(a) * 2) + int(str(a) * 3) + int(str(a) * 4)
     return integer_sum
 
 
@@ -136,7 +136,22 @@ print(three(5))
 
 
 def four(string1, string2):
-    return ""
+    list_string1 = []
+    list_string2 = []
+    for i in string1:
+        list_string1.append(i)
+    for i in string2:
+        list_string2.append(i)
+
+    new_string = ''.join(''.join(x) for x in zip(list_string1, list_string2))
+
+    return new_string
+
+
+print(four("String", "Fridge"))
+print(four("Dog", "Cat"))
+print(four("True", "Tree"))
+print(four("return", "letter"))
 
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
