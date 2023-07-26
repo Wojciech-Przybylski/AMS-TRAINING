@@ -5,7 +5,8 @@ import random
 
 # INSTRUCTIONS
 
-# In case it is not clear, the Question appears first, then examples, then any hints and finally the function that you need to complete appears underneath:
+# In case it is not clear, the Question appears first, then examples, then any hints and finally the function that
+# you need to complete appears underneath:
 #
 # 	<QUESTION>
 #
@@ -13,10 +14,9 @@ import random
 #
 # 	<HINT>
 
-# You are allowed access to the internet for this assessment, but remember you could use the DOCUMENTATION that comes bundled with your Python installation.
-# Every command has help documentation. To read it:
-# 	1. Access Python from your CLI
-# 	2. Type help(<command>) and hit enter, where <command> is the command you want help with. For example: help(str)
+# You are allowed access to the internet for this assessment, but remember you could use the DOCUMENTATION that comes
+# bundled with your Python installation. Every command has help documentation. To read it: 1. Access Python from your
+# CLI 2. Type help(<command>) and hit enter, where <command> is the command you want help with. For example: help(str)
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -34,17 +34,18 @@ import random
 # How does a for loop iterate through a string?
 
 def one(string):
+    new_string = ""
     list_of_char = []
     for char in string:
         make_one_three = char * 3
         list_of_char.append(make_one_three)
         new_string = "".join(list_of_char)
-    return new_string
+    return print(new_string)
 
 
-print(one("The"))
-print(one(("AAbb")))
-print(one(("Hi-There")))
+(one("The"))
+(one(("AAbb")))
+(one(("Hi-There")))
 
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
@@ -136,7 +137,7 @@ print(three(5))
 
 # <HINT>
 # Use your CLI to access the Python documentation and get help manipulating strings - help(list.insert).
-# How would you seperate a string into characters?
+# How would you separate a string into characters?
 
 
 def four(string1, string2):
@@ -204,7 +205,7 @@ five()
 
 
 def six(string):
-    if string[-2:] == "py":
+    if string.lower()[-2:] == "py":
         return True
     else:
         return False
@@ -214,7 +215,6 @@ print(six("ilovepy"))
 print(six("welovepy"))
 print(six("welovepyforreal"))
 print(six("pyiscool"))
-
 
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
@@ -242,6 +242,9 @@ print(six("pyiscool"))
 
 
 def seven(a, b, c):
+
+
+
     return False
 
 
