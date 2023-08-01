@@ -1,46 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Structural HTML</title>
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <header>
-        <h1>My Blog Posts</h1>
-    </header>
-    <section>
-        <header>
-            <h2>Latest Post</h2>
-        </header>
-        <article>
-            <header>
-                <h3>My HTML5 Blog</h3>
-                <p>Date: 3rd October</p>
-            </header>
-            <main>
-                <h4>My HTML5 Musings</h4>
-                <p id="intro">This is my introduction to HTML5</p>
-                <p id="postBody">This is the body of my post</p>
-                <p id="conclusion">This is the conclusion of my post</p>
-                <p title="tooltip">QA is the leading training provider.</p>
-                <a href="https://www.qa.com/">QA Website</a>
-                <img src="https://media.glassdoor.com/sqll/12542/qa-squarelogo-1562689648172.png"    alt="QA Logo">
-            </main>
-            <footer>
-                <address>
-                    <a href="#">Posted in HTML5 stuff</a>
-                </address>
-            </footer>
-        </article>
-    </section>
+    <form action="Succesful_sign_up.html" method="post">
+            <h1> Sign Up </h1>
+            <header>Your Basic Info</header>
+    </br>
+            Name
+            <input title="username" type="text" name="UserName"/>
+        </br>
+    </br>
 
-    <footer>
-        <p>My Social Media Links go here!</p>
-    </footer>
+            Email
+            <input title="email" type="email" name="Email"/>
+        </br>
+    </br>
+
+            Password
+            <input title="password" type="text" name="Password"/>
+        </br>
+    </br>
+
+            Gender:
+        </br>
+    </br>
+
+            <input type="radio" name="RadioGender" value="Male"/>Male
+        </br>
+    </br>
+
+            <input type="radio" name="RadioGender" value="Female"/>Female
+        </br>
+    </br>
+</br>
+
+        <button type="submit">Sign Up</button>
+    </form>
+</br>
+    <table>
+        <thead>
+            <th>ID</th>
+            <th>FirstName</th>
+            <th>SecondName</th>
+            <th>Email</th>
+        </thead>
+
+        <tbody>
+            <td>1</td>
+            <td>Wojciech</td>
+            <td>Przybylski</td>
+            <td>wojciechp@mail.com</td>
+        </tbody>
+        <tbody>
+            <td>2</td>
+            <td>Dave</td>
+            <td>Davidson</td>
+            <td>dav123@mail.com</td>
+        </tbody>
+        <tbody>
+            <td>3</td>
+            <td>Jimmy</td>
+            <td>Jimilson</td>
+            <td>JJ11@mail.com</td>
+        </tbody>
+        <tbody>
+            <td>4</td>
+            <td>Voy</td>
+            <td>Roy</td>
+            <td>VR33@mail.com</td>
+        </tbody>
+        <tbody>
+            <td>5</td>
+            <td>J. Robert</td>
+            <td>Oppenheimer</td>
+            <td>JROppy@mail.com</td>
+        </tbody>
+       
+
+    </table>
+
+
 </body>
-
 </html>
