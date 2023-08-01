@@ -1,0 +1,50 @@
+        body{
+            background-color: aquamarine;
+        }
+        h1 {
+            font-size: xx-large;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: red;
+        }
+        input[title^="username"] {
+            transform: rotate(5deg);
+          }
+        input[title^="email"] {
+            transform: rotate(-5deg);
+          }
+        input[title^="password"] {
+            transform: rotate(5deg);
+          }
+        form{
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color: rgb(255, 0, 0);
+            text-decoration: solid;
+            text-align: center;
+            
+        }
+        button{
+            background-color:blue ;
+            color: red;
+            transform: skew(-29deg) scale(2)
+
+            
+        }
+
+        input, textarea{
+            border-color: blue;
+            background-color: black;
+            color: rgb(255, 0, 0)
+        }
+        
+
+        table,th, td {
+            background-color: black;
+            border: 1px solid blue;
+            text-align: center;
+            font-style: italic;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: rgb(255, 0, 0);
+            margin-left: auto;
+            margin-right: auto;
+            
+        }
