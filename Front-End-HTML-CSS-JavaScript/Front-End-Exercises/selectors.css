@@ -1,0 +1,25 @@
+em {
+    color: blue;
+}
+
+article blockquote{
+    color: red;
+}
+
+body > article {
+    color: lime;
+}
+
+article h1 + p {
+    color: purple;
+}
+
+article h1 ~ p {
+    background-color: grey;
+}
+
+[class="hover"]:hover{
+    background-color:blue;
+    color: white;
+}
+
