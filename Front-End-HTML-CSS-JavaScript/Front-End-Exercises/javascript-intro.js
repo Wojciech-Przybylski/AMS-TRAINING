@@ -16,4 +16,4 @@ let model = "c300"
 
 console.log(`my favourite car is ${myCar} and model is ${model}`);
 
-console.log("%c my car is is black","background-color: black; color: white; font-family:arial; font-size: 16px; font-style: bold;")
+console.log("%c my car is is black","background-color: black; color: white; font-family:arial; font-size: 16px; font-style: bold;") 
