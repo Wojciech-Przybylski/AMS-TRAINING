@@ -4,14 +4,21 @@ import os
 
 app = Flask(__name__)
 
-app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URI')
+app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///data.db"
 db = SQLAlchemy(app)
 
-class Person(db.Model):
+class Games(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    first_name = db.Column(db.String(30))
-    last_name = db.Column(db.String(30), unique=True)
-    age = db.Column(db.Integer)
+    name = db.Column(db.String(30))
+    developer = db.Column(db.String(30))
+    price = db.Column(db.REAL)
+    age_rating = db.Column(db.Integer)
+    orders = db.relationship('Orders',  backref='gamesbr')
+    
+class Orders(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    order_number = db.Column(db.String(10), unique=True)
+    game_id = db.Column(db.Integer, db.ForeignKey('games.id'), nullable=False)
 
 @app.route('/')
 def home():
