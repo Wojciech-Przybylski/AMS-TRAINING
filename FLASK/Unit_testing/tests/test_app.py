@@ -40,3 +40,13 @@ class TestViews(TestBase):
         response = self.client.get(url_for('home'))
         self.assertEqual(response.status_code, 200)
         self.assertIn(b'MsWoman', response.data)
+        
+class TestCreate(TestBase):
+    def test_create_form(self):
+        response = self.client.post(
+            url_for('home'),
+            data = dict(name="Jim")
+        )
+        test_register = Register.query.filter_by(name="Jim").first()
+        self.assertEqual(test_register.name, "Jim")
+    

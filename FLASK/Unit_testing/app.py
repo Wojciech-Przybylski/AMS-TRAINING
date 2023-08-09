@@ -3,7 +3,10 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_wtf import FlaskForm 
 from wtforms import StringField, SubmitField
 
+
 app = Flask(__name__)
+
+
 
 app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///data.db"
 app.config['SECRET_KEY'] = "shhh it's a secret"
@@ -17,7 +20,8 @@ class RegisterForm(FlaskForm):
     name = StringField('Name')
     submit = SubmitField('Submit')
 
-db.create_all()
+with app.app_context():
+    db.create_all()
 
 @app.route('/', methods=["GET","POST"])
 def home():
