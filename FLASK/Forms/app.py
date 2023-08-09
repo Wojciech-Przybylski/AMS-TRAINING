@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request
 from flask_wtf import FlaskForm
-from wtforms import StringField, SubmitField, SelectField
+from wtforms import StringField, SubmitField, SelectField,DateField,IntegerField
 
 app = Flask(__name__)
 
@@ -12,8 +12,8 @@ food = ['pizza', 'spaghetti', 'chilli']
 class BasicForm(FlaskForm):
     first_name = StringField('First Name')
     last_name = StringField('Last Name')
-    dob = StringField('Date of Birth')
-    fav_number = StringField('Favourite Number')
+    dob = DateField('Date of Birth')
+    fav_number = IntegerField('Favourite Number')
     fav_food = SelectField('Choose your favourite food', choices=food)
     submit = SubmitField('Add Info')
     
@@ -31,7 +31,7 @@ def register():
         fav_number = form.fav_number.data
         fav_food = form.fav_food.data
 
-        if len(first_name) == 0 or len(last_name) == 0 or len(dob) == 0 or len(fav_number) == 0:
+        if len(first_name) == 0 or len(last_name) == 0:
             message = "Fill in all the criteria"
         else:
             message = f'Thank you, \n {first_name} {last_name} \n Date of birth: {dob} \n Your favourite number is: {fav_number}, Your favourite food is: {fav_food}'
